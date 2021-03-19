@@ -1,0 +1,225 @@
+<!-- 	Template Authors: Stefan Lang, Eva Missoni - PLUS 
+		Template Creation Date: March-June 2020 
+		
+		IMPORTANT NOTICES FOR USERS/AUTHORS:  
+		SECTIONS TO BE EDITED BY AUTHORS ARE INDICATED AS FOLLOWS:  <!-- AUTHORS: DEFINE ... --> 
+<!--	THE COMMANDS <section> and </section>  EMBRACE THE CONTENT FOR EACH SINGLE SLIDE.
+		ALTERNATIVELY, YOU CAN USE MARKDOWN NOTATION TO CREATE YOUR SLIDES. More information: https://github.com/webpro/reveal-md 
+		-->
+		
+		
+<!doctype html>
+<html lang="en" >
+
+	<head>
+		<meta charset="utf-8">
+		 
+		<title>EO for Managers</title>
+		
+	<!-- AUTHORS: DEFINE METADATA FOR WHOLE SLIDESET HERE: (Dublin Core Metadata format, complemented by BoK-Concepts) -->	
+		<meta property="dc:title" content="EO for Managers" />
+		<meta property="dc:creator" content="Agris Brauns" /> 
+		<meta property="dc:publisher" content="Institute for Environmental Solutions" /> 
+		<meta property="dc:subject" content="Copernicus, EO4GEO, WP5, Satellite, Earth Observation" />
+		<meta property="dc:abstract" content="This is a template slideset for EO4GEO Partners to familiarize with EO4GEO, introducing the idea of Copernicus and its services. Nevertheless, content-generation is not the prime concern of the template" />
+		<meta property="dc:tableOfContents" content="(1) What is EO?; 
+							     (2) Benefits of Copernicus; 
+							     (3) Integration of Jupyter Notebooks; 
+							     (4) Integration of Youtube Video; 
+							     (5) Integration of H5P; 
+							     (6) Copernicus Services; 
+							     (7) Reference list; />
+		<meta property="dc:description" content="Learning outcomes: Understand remote sensing workflow including image acquisition, (pixel-based) image analysis, classification and validation; get to know online portals, data catalogues, and pricing schemes for satellite data; Familiarize with the European Copernicus Earth observation programme; Master standard image analysis routines as implemented in ArcGIS Pro" /> 
+		<meta property="dc:contributor" content="Barbara Hofer" />
+		<meta property="dc:contributor" content="Eva Missoni" />
+		<meta property="dc:created" content="2021-03-20" />
+		<meta property="dc:type" content="teaching material" /> 
+		<meta property="dc:format" content="html" />
+		<meta property="dc:language" content="EN" />
+		<meta property="dc:SizeOrDuration" content="45min" />
+		<meta property="dc:audience" content="students" />
+		<meta property="dc:educationLevel" content="EQF 6" />
+		<meta property="dc:source” content="Existing youtube-video on Copernicus Climate Change Service; existing Jupyter Notebook on "Well switching in Bangladesh" />
+		<meta property="dc:rightsHolder" content="Stefan Lang" />
+		<meta property="dc:license" content="https://creativecommons.org/licenses/by-sa/4.0/deed.en" />
+
+		<link rel="dc:relation" href="eo4geo:IP1-3-2" />
+		<link rel="dc:relation" href="eo4geo:IP1-7" />
+		<link rel="dc:relation" href="eo4geo:IP1" />	
+		<link rel="dc:relation" href="eo4geo:IP3-4" />
+		<link rel="dc:relation" href="eo4geo:IP4-2-1" />
+
+		<link rel="stylesheet" href="internal_restricted/v1.0/css/reveal.css">
+		<!-- CHOOSE BETWEEN 2 EO4GEO TEMPLATE THEMES:-->
+		<link rel="stylesheet" href="internal_restricted/v1.0/css/theme/eo4geo.css" id="theme"> <!-- white background design --> 
+		<link rel="stylesheet" href="internal_restricted/v1.0/plugin/markdown/css/theme/simplemenu.css">
+		<!-- <link rel="stylesheet" href="internal_restricted/v1.0/css/theme/eo4geo_grey.css" id="theme">  <!-- anthrazit background design --> 
+		<!-- EO4GEO FONT ROBOTO SLAB -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'> 
+		<link rel="stylesheet" href="partnerLogo.css" id="theme"> 
+		<link rel="stylesheet" href="customer_content/css/eo4geo_override.css" id="theme">
+
+    <base target="_blank"> <!-- All links in the presentation are opened in a seperate tab"-->
+ 
+	</head>
+
+	<body>
+		  
+		<div class="reveal" >
+		
+			 <!-- FORMATTING FOR HEADER -->
+			
+					
+				 <div class = "eo4geologo" style="width: 11%;height : 11%" ></div>	
+			
+				 <div class = "partnerlogo" style="width: 15%;height : 13%" ></div>		
+				 
+
+				<div class="slides">
+				
+			
+				<!-- AUTHORS: DEFINE CONTENT ON YOUR FIRST SLIDE --> 
+				<section >
+					<h1>Earth Observation for Managers</h1>
+				<!-- AUTHORS: PUT YOUR PRESENTER NOTES HERE: -->
+
+				</section>
+				
+				
+				<!-- AUTHORS: DEFINE CONTENT FOR YOUR SECOND SLIDE: --> 
+				<!--<section class="scrollable">
+					<h1>Copernicus</h1> 
+					<br>Copernicus and Galileo are the two flagships of the <em>European Space Policy</em>. Galileo denotes the European satellite navigation system, while Copernicus is the name of the European Earth observation <a href="https://www.copernicus.eu">programme</a>
+					<br><img width="600" height="300" data-src="resources\template_WhatCopernicus\CopMountain.jpg" alt="Copernicus allegory">
+				</section>
+				
+					<!-- AUTHORS: DEFINE CONTENT FOR YOUR SECOND SLIDE: --> 
+				<!--<section >
+					<h1>Copernicus</h1> 
+					<br>
+					 
+					<br><img  style="width: 100%; max-width: 600px; max-height:600px; height:100%" data-src="resources\2560pxAERONET.jpg" alt="Copernicus allegory">
+					 
+				</section>
+				
+				<!-- AUTHORS: Same content as above - now as example in Markdown language   --> <!-- AUTHORS: for horizontally organised slides, use three dashes ---, for vertical slides two dashes -- -->
+				<!--section data-markdown data-separator="---" data-separator-vertical="--" data-separator-notes="^Note:"> 
+				                    <script type="text/template">
+                        # What is Copernicus?
+                        (A demo slide deck using the Reveal.js framework)
+					
+						
+                        ---
+						
+                        # Copernicus
+                        Copernicus and Galileo are the two flagships of the European Space Policy. Galileo denotes the European satellite navigation system, while Copernicus is the name of the <a href="https://www.copernicus.eu">European Earth observation programme</a>
+						<img width="600" height="300" data-src="resources\template_WhatCopernicus\CopMountain.jpg" alt="Copernicus allegory">
+						
+						
+						--
+						
+						# Earth observation (EO)
+						EO is one out of three main space assets
+						- SatNav
+                        - SatCom
+						- SatObs (EO)
+						
+						<img width="600" height="250" data-src="resources\template_WhatCopernicus\3SpaceComponents.png" alt="3SpaceComponents">	
+                    </script>
+                </section-->
+				
+			
+				
+				<!-- AUTHORS: DEFINE SECTIONS WITHIN A SECTION TO GET VERTICAL SLIDES:--> 
+				<section id="EO">
+					<section > 
+						<h2>Five episodes about the importance of Earth Observation in various fields</h2> 
+
+						<!-- AUTHORS: CREATE BULLETED LIST: --> 
+						<ul>
+							<li style="color:#337acc;""><a href="#/1/1"><u>EO and Decision Making</u></a></li>
+							<li style="color:#337acc;""><a href="#/1/2"><u>EO and Forestry</u></a></li>
+							<li style="color:#337acc;"><a href="#/1/3"><u>EO and Lakes</u></a></li>
+							<li style="color:#337acc;""><a href="#/1/4"><u>EO and Emergencies</u></a></li>
+							<li style="color:#337acc;"><a href="#/1/5"><u>EO and Natural Resources</u></a></li>
+						</ul>
+						<p></p>
+						<button class="navigate-down">Videos can be seen below</button>
+
+					</section>
+					
+					<section >
+						<h2 style="color:#337acc;">EO and Decision Making</h2>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/oJzB-ic_Xjw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</section>
+					
+
+					<section >
+						<h2 style="color:#337acc;">EO and Forestry</h2>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/bjdZ3ksBdXM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</section>
+
+					<section >
+						<h2 style="color:#337acc;">EO and Lakes</h2>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/zX2800p7zb4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</section>
+
+					<section >
+						<h2 style="color:#337acc;">EO and Emergencies</h2>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/9qaY5IESBxM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</section>
+
+					<section >
+						<h2 style="color:#337acc;">EO and Natural Resources</h2>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/ee4OcRg0yrQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<br>
+						<a href="#/EO"> Back to top </a>
+					</section>
+
+
+
+				
+
+			
+                </section>
+				<section>Involved parties in the video making and editing: .... ?</section>
+
+              </div>
+
+
+		<script src="internal_restricted/v1.0/js/reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: './internal_restricted/v1.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: './internal_restricted/v1.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: './internal_restricted/v1.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: './internal_restricted/v1.0/plugin/notes/notes.js' },{ src: 'socket.io/socket.io.js', async: true },
+					{ src: './internal_restricted/v1.0/plugin/notes-server/client.js', async: true }
+					
+				]
+			});
+
+		</script>
+		
+		<!-- rauslöschen?? -->
+		<script>Reveal.initialize({
+			simplemenu: {
+				menuselector: '.menu a'
+			},
+			dependencies: [
+				{ src: './internal_restricted/v1.0/plugin/markdown/assets/js/revealjs/plugin/simplemenu/simplemenu.js', async: false } 
+			]
+			});
+		</script>
+
+	</body>
+</html>
