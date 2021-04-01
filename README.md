@@ -1,9 +1,9 @@
 # Earth Observation for Decision Makers
 
-The course material consists of 5 videos about Earth Observation technologies and capabilities made especially for decision-makers and everyone that wants to gain insight into Earth Observation and its contribution in various fields.
+The course material consists of 5 videos about Earth Observation technologies and capabilities made especially for decision-makers and everyone who wants to gain insight into Earth Observation and its contribution in various fields.
 
    <strong>1. EO and Decision Making</strong>
-   
+
    The first episode showcases what is Earth observation (EO) and how it can help business leaders and decision makers to find smart solutions for the management of environment, and natural resources. Additionally, the episode highlights opportunities for Latvia being a part of the European EO industry and  becoming an Associate Member of the European Space Agency.   
 
    <strong>2. EO and Forestry </strong>
